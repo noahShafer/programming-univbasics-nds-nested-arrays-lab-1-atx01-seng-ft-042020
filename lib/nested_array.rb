@@ -21,7 +21,7 @@ def assembled_matrix
 end
 
 def sorted_matrix 
-  assembled_matrix.map { |arr|  puts arr.sort { |a, b| a <=> b }}
+  assembled_matrix.map { |arr| arr.sort { |a, b| a <=> b }}
 end
 
 def matrix_lookup(matrix, row, column)
