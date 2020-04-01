@@ -19,7 +19,7 @@ CONVENTIONAL_PRODUCE = [
 def assembled_matrix = [ORGANIC_PRODUCE, CONVENTIONAL_PRODUCE]
 end
 
-def sorted_matrix = assembled_matrix.map { |arr|  arr.sort}
+def sorted_matrix = assembled_matrix.map { |arr|  arr.sort { |a, b| a <=> b }}
 end
 
 def matrix_lookup(matrix, row, column)
