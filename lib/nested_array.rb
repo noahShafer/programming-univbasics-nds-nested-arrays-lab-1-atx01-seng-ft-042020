@@ -21,11 +21,11 @@ def assembled_matrix
 end
 
 def sorted_matrix 
-  puts assembled_matrix.map { |arr|  puts arr.sort { |a, b| a <=> b }}
+  assembled_matrix.map { |arr|  puts arr.sort { |a, b| a <=> b }}
 end
 
 def matrix_lookup(matrix, row, column)
-  puts matrix[row][column]
+  matrix[row][column]
 end
 
 def matrix_update(matrix, row, column, new_value)
